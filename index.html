@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Locksmith",
+  "name": "Cerrajería 24 Horas",
+  "description": "Cerrajería profesional con atención inmediata. Apertura de puertas, autos y cambios de cerraduras.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Uruguay"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
+      "@type": "Place",
+      "name": "Servicio a domicilio"
+    }
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "telephone": "+59892770707",
+  "priceRange": "$$"
+}
+</script>
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cerrajería 24 Horas | Atención Inmediata | Apertura de Puertas y Autos</title>
+
+<meta name="description"
+      content="Cerrajería 24 horas con atención inmediata. Apertura de puertas, autos, cambio de cerraduras y emergencias. Llegamos rápido y resolvemos en el momento.">
+	<!-- Tailwind -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- Alpine -->
+	<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/trash.css" />
+	<!-- Poppins font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body class="antialiased">
+	<!-- navbar -->
+	<div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
+        <div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
+            <div class="flex flex-row items-center justify-between py-6">
+                <div class="relative md:mt-8 flex items-center gap-4">
+    <!-- Imagen / Logo -->
+    <img src="img/logo.png"
+         alt="Cerrajería 24 hs"
+     class="w-14 h-14 md:w-20 md:h-20 object-contain">
+	 
+</div>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{ 'transform md:transform-none': !open, 'h-full': open }" class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Inicio</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#zona-cobertura">Ubicacion</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#testimonio">Testimonios</a>
+            </nav>
+        </div>
+    </div>
+	<div class="bg-cream">
+		<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
+			<!--Left Col-->
+			<div class="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
+				<h1 data-aos="fade-right" data-aos-once="true" class="my-4 text-5xl font-bold leading-tight text-darken">
+					<span class="text-yellow-500">Cerrajería 24 Horas</span> Atención Inmediata
+
+				</h1>
+				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal text-2xl mb-8">Apertura de puertas, autos y cambios de cerraduras las 24 hs
+</p>
+				<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
+     class="w-full flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+	<!-- WhatsApp -->
+<a href="https://wa.me/59892770707"
+   target="_blank"
+   class="inline-flex items-center gap-3
+          px-8 py-4 rounded-full
+          bg-green-600
+          text-white font-bold text-lg
+          shadow-md shadow-green-700/40
+          transition-all duration-300
+          hover:bg-green-700 hover:scale-105
+          active:scale-95">
+
+    <!-- WhatsApp icon CORRECTO -->
+    <svg class="w-6 h-6 fill-current"
+         viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.15 6.42 2.15 11.88c0 2.09.55 4.04 1.51 5.74L2 22l4.54-1.59a9.82 9.82 0 005.5 1.66h.01c5.46 0 9.89-4.42 9.89-9.88C21.93 6.42 17.5 2 12.04 2zm0 17.94a7.98 7.98 0 01-4.08-1.13l-.29-.17-2.7.95.96-2.63-.19-.3a7.9 7.9 0 01-1.24-4.29c0-4.38 3.57-7.94 7.95-7.94 4.38 0 7.94 3.56 7.94 7.94 0 4.38-3.56 7.94-7.94 7.94zm4.36-5.93c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.83-.84 2.03 0 1.2.87 2.36.99 2.52.12.16 1.71 2.64 4.15 3.7.58.25 1.04.4 1.39.51.58.18 1.11.15 1.52.09.46-.07 1.42-.58 1.62-1.13.2-.55.2-1.04.14-1.13-.06-.09-.22-.14-.46-.26z"/>
+    </svg>
+
+	<span class="sr-only">
+Cerrajería 24 horas WhatsApp atención inmediata
+</span>
+
+
+    <span>WhatsApp</span>
+</a>
+
+
+
+<a href="tel:+59892770707"
+   class="inline-flex items-center gap-3
+          px-7 py-4 rounded-full
+          bg-yellow-500
+          text-white font-semibold text-lg
+          shadow-md shadow-yellow-600/40
+          transition-all duration-300
+          hover:bg-yellow-600 hover:scale-105
+          active:scale-95">
+
+    <!-- Phone icon -->
+    <svg class="w-5 h-5 fill-current"
+         viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1C10.07 22 2 13.93 2 3.5a1 1 0 011-1H6.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+    </svg>
+
+    <span>Llamar ahora</span>
+</a>
+
+
+</div>
+
+			</div>
+			<!--Right Col-->
+			<div class="w-full lg:w-6/12 lg:-mt-10 relative" id="cerrajero">
+				<img data-aos="fade-up" data-aos-once="true" class="w-10/12 mx-auto 2xl:-mb-20" src="img/cerrjaero.png" />
+			</div>
+		</div>
+		<div class="text-white -mt-14 sm:-mt-24 lg:-mt-36 z-40 relative">
+			<svg class="xl:h-40 xl:w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
+			</svg>
+			<div class="bg-white w-full h-20 -mt-px"></div>
+		</div>
+	</div>
+
+	<!-- container -->
+	<div class="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
+
+		<!-- All-In-One Cloud Software. -->
+		<div data-aos="flip-up" class="max-w-xl mx-auto text-center mt-24">
+	<h2 class="font-bold text-darken my-3 text-2xl">
+		Servicios de <span class="text-yellow-500">Cerrajería Profesional</span>
+	</h2>
+	<p class="leading-relaxed text-gray-500">
+		Brindamos soluciones rápidas y seguras en aperturas, cambios de cerraduras y emergencias las 24 horas.
+	</p>
+</div>
+
+		<!-- card -->
+		<div class="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
+			<div data-aos="fade-up" class="bg-white shadow-xl p-6 text-center rounded-xl">
+				<div style="background: #5B72EE;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
+					<svg class="w-6 h-6 text-white" viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" />
+</svg>
+
+				</div>
+				<h2 class="font-medium text-xl mb-3 lg:px-14 text-darken">
+	Apertura de puertas y cerraduras
+</h2>
+<p class="px-4 text-gray-500">
+	Aperturas sin daño en puertas de hogares, oficinas y locales comerciales. Atención inmediata.
+</p>
+</div>
+			<div data-aos="fade-up" data-aos-delay="150" class="bg-white shadow-xl p-6 text-center rounded-xl">
+				<div style="background: #F48C06;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
+					<svg class="w-6 h-6 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+</svg>
+
+				</div>
+				<h2 class="font-medium text-xl mb-3 lg:px-14 text-darken">Cerrajería automotor</h2>
+				<p class="px-4 text-gray-500">Apertura de autos, duplicado de llaves y soluciones rápidas para vehículos en la vía pública.</p>
+			</div>
+			<div data-aos="fade-up" data-aos-delay="300" class="bg-white shadow-xl p-6 text-center rounded-xl">
+				<div style="background: #29B9E7;" class="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12">
+					<svg class="w-6 h-6 text-white" viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+</svg>
+
+				</div>
+				<h2 class="font-medium text-xl mb-3 lg:px-14 text-darken lg:h-14 pt-3">Cambios y reparación de cerraduras</h2>
+				<p class="px-4 text-gray-500">Instalación y reemplazo de cerraduras tradicionales y de seguridad para mayor protección.</p>
+			</div>
+		</div>
+
+		<!-- lorem -->
+<div class="mt-28">
+	<div data-aos="flip-down" class="text-center max-w-screen-md mx-auto">
+		<h2 class="text-3xl font-bold mb-4">
+			¿Qué es <span class="text-yellow-500">nuestro servicio?</span>
+		</h2>
+		<p class="text-gray-500">
+			Brindamos soluciones profesionales en cerrajería para hogares, comercios y vehículos,
+			con atención inmediata, trabajos seguros y asistencia de emergencia las 24 horas.
+		</p>
+	</div>
+
+	<div data-aos="fade-up" class="flex flex-col md:flex-row justify-center space-y-5 md:space-y-0 md:space-x-6 lg:space-x-10 mt-7">
+		<div class="relative md:w-5/12">
+			<img
+	class="w-full h-full object-cover rounded-2xl"
+	src="img/destornillador.jpg"
+	alt="Cerrajero Montevideo">
+
+			<div class="absolute bg-black bg-opacity-20 bottom-0 left-0 right-0 w-full h-full rounded-2xl">
+				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+					<h2 class="uppercase text-white font-bold text-center text-sm lg:text-xl mb-3">
+						PARA HOGARES Y COMERCIOS
+					</h2>
+					<button href="https://wa.me/59892770707?text=Hola%20necesito%20un%20cerrajero%20de%20urgencia" class="rounded-full text-white text-xs lg:text-md px-6 py-3 w-full font-medium focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out" style="background: rgba(32, 226, 14, 0.9)">
+						WhatsApp
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="relative md:w-5/12">
+			<img
+	class="w-full h-full object-cover rounded-2xl"
+	src="img/ganzua.webp"
+	alt="Cerrajero emergencia">
+			<div class="absolute bg-black bg-opacity-20 bottom-0 left-0 right-0 w-full h-full rounded-2xl">
+				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+					<h2 class="uppercase text-white font-bold text-center text-sm lg:text-xl mb-3">
+						EMERGENCIAS 24 HORAS
+					</h2>
+					<button
+						href="tel:+59892770707"
+						class="rounded-full text-white text-xs lg:text-md px-6 py-3 w-full font-medium focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+						style="background: rgba(238, 184, 35, 0.9)">
+						Llamar ahora
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="sm:flex items-center sm:space-x-8 mt-36">
+	<div data-aos="fade-right" class="sm:w-1/2 relative">
+
+		<h2 class="font-semibold text-2xl relative z-50 text-darken lg:pr-10 leading-tight">
+			Cerrajería profesional
+			<span class="text-yellow-500 block">24 horas · Atención inmediata</span>
+		</h2>
+
+		<p class="py-5 lg:pr-32">
+			Apertura de puertas, cambios de cerraduras y soluciones de seguridad.
+			Llegamos rápido y resolvemos en el momento, sin vueltas.
+		</p>
+	</div>
+
+	<div data-aos="fade-left" class="sm:w-1/2 relative mt-10 sm:mt-0">
+		<div style="background: #f1a708;" class="floating w-24 h-24 absolute rounded-lg z-0 -top-3 -left-3"></div>
+
+		<img class="rounded-xl z-40 relative w-full object-cover" src="img/cerradura.jpg" alt="Servicio de cerrajería 24 horas">
+
+		<div class="bg-yellow-500 w-40 h-40 floating absolute rounded-lg z-10 -bottom-3 -right-3"></div>
+	</div>
+</div>
+
+
+<div class="md:flex mt-40 md:space-x-10 items-start">
+	<div data-aos="fade-down" class="md:w-7/12 relative">
+		<div style="background: #f59e0b;" class="w-32 h-32 rounded-full absolute z-0 left-4 -top-12 animate-pulse"></div>
+		<div style="background: #111827;" class="w-5 h-5 rounded-full absolute z-0 left-36 -top-12 animate-ping"></div>
+
+		<img class="relative z-50 floating rounded-xl w-full object-cover"
+		     src="img/cerrajero24hs.jpg"
+		     alt="Servicio de cerrajería 24 horas">
+
+		
+	</div>
+
+	<div data-aos="fade-down" class="md:w-5/12 mt-20 md:mt-0 text-gray-600">
+		<h2 class="text-2xl font-semibold text-darken lg:pr-40 leading-tight">
+			Seguridad real con
+			<span class="text-yellow-500 block">cerrajeros profesionales</span>
+		</h2>
+
+		<div class="flex items-start space-x-4 my-6">
+			<div class="flex-shrink bg-yellow-500 text-white rounded-full p-3 text-lg">
+				🚨
+			</div>
+			<p>
+				<strong>Emergencias 24 horas.</strong><br>
+				Aperturas rápidas sin romper tu puerta.
+			</p>
+		</div>
+
+		<div class="flex items-start space-x-4 my-6">
+			<div class="flex-shrink bg-yellow-500 text-white rounded-full p-3 text-lg">
+				🔐
+			</div>
+			<p>
+				<strong>Cambio e instalación de cerraduras.</strong><br>
+				Alta seguridad para hogares y comercios.
+			</p>
+		</div>
+
+		<div class="flex items-start space-x-4 my-6">
+			<div class="flex-shrink bg-yellow-500 text-white rounded-full p-3 text-lg">
+				🚗
+			</div>
+			<p>
+				<strong>Cerrajería automotor.</strong><br>
+				Apertura y duplicado de llaves.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+		<!-- Servicios de Cerrajería -->
+<div class="flex flex-col md:flex-row items-center md:space-x-14 mt-20">
+	<div data-aos="fade-right" class="md:w-1/2 lg:pl-14">
+		<h2 class="text-darken font-bold text-3xl lg:pr-32 leading-tight">
+			Servicios de <span class="text-yellow-500">Cerrajería Profesional</span>
+		</h2>
+
+		<p class="text-gray-600 my-5 lg:pr-32">
+			Brindamos soluciones rápidas y seguras para hogares, comercios y vehículos.
+			Trabajamos con cerraduras de alta seguridad y atención personalizada.
+		</p>
+
+		<ul class="space-y-3 text-gray-700">
+			<li>• Apertura de puertas sin daños</li>
+			<li>• Cambio e instalación de cerraduras</li>
+			<li>• Copias de llaves y sistemas de seguridad</li>
+		</ul>
+
+		<div class="mt-6 flex gap-4">
+        <a href="https://wa.me/59892770707"
+	   target="_blank"
+		   class="inline-block mt-3 px-6 py-3 rounded-full bg-green-500 text-white font-semibold transition hover:scale-105">
+			Whatsapp
+		</a>
+		<a href="tel:+59892770707"
+		   class="inline-block mt-3 px-6 py-3 rounded-full bg-yellow-500 text-white font-semibold transition hover:scale-105">
+			Llamar ahora
+		</a>
+		</div>
+	</div>
+
+	<div data-aos="fade-left" class="md:w-1/2 mt-10 md:mt-0">
+		<img class="rounded-2xl shadow-xl w-full object-cover" src="img/cerrajero24.jpg" alt="Servicio de cerrajería profesional">
+	</div>
+</div>
+
+
+<!-- Atención Personalizada -->
+<div class="mt-28 flex flex-col-reverse md:flex-row items-center md:space-x-14">
+	<div data-aos="fade-right" class="md:w-1/2 mt-10 md:mt-0">
+		<img class="rounded-2xl shadow-xl w-full object-cover"
+		     src="img/cerrajero0.webp"
+		     alt="Atención personalizada en cerrajería">
+	</div>
+
+	<div data-aos="fade-left" class="md:w-1/2 md:pr-14">
+		<h2 class="font-bold text-darken text-3xl leading-tight lg:pr-32">
+			Atención <span class="text-yellow-500">Personalizada</span>
+		</h2>
+
+		<p class="text-gray-600 my-5 lg:pr-32">
+			Te asesoramos de forma directa para ofrecer la mejor solución según
+			tu necesidad, con presupuestos claros y sin sorpresas.
+		</p>
+	</div>
+</div>
+
+
+<!-- TESTIMONIOS -->
+ <section id="testimonio">
+<div class="mt-28 flex flex-col md:flex-row items-center md:space-x-14">
+	<div data-aos="zoom-in-right" class="md:w-5/12">
+		<div class="flex items-center space-x-6 mb-6">
+			<span class="border border-yellow-500 w-12"></span>
+			<h3 class="text-yellow-500 tracking-widest text-sm font-semibold">
+				TESTIMONIOS
+			</h3>
+		</div>
+
+		<h2 class="font-bold text-darken text-3xl leading-tight lg:pr-40">
+			Clientes que confían<br>
+			en nuestro <span class="text-yellow-500">servicio</span>
+		</h2>
+
+		<p class="text-gray-600 my-5 lg:pr-36">
+			Más de cientos de clientes eligieron nuestro servicio de cerrajería
+			por la rapidez de respuesta, el trato profesional y la seguridad garantizada.
+		</p>
+
+		<p class="text-gray-600 my-5 lg:pr-36">
+			Trabajamos todos los días para resolver emergencias y brindar
+			soluciones confiables en hogares y comercios.
+		</p>
+
+		<p class="text-gray-700 font-medium my-6 lg:pr-36">
+			Disponibilidad inmediata. Atención real. Resultados efectivos.
+		</p>
+
+<a href="https://wa.me/59892770707?text=Hola%20necesito%20un%20cerrajero"
+   target="_blank"
+   class="group inline-flex items-center gap-3 px-7 py-3 rounded-full
+          bg-green-600
+          text-white font-semibold tracking-wide
+          shadow-md shadow-green-700/40
+          transition-all duration-300
+          hover:bg-green-700 hover:scale-105
+          mb-8 md:mb-0">
+
+	<span>Contactar por WhatsApp</span>
+
+	<svg class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1"
+	     viewBox="0 0 32 32" fill="currentColor"
+	     xmlns="http://www.w3.org/2000/svg">
+		<path d="M19.11 17.39c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.34-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.96.94-.96 2.29 0 1.35.99 2.66 1.13 2.84.14.18 1.95 2.98 4.73 4.18.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+		<path d="M16 2.67C8.82 2.67 3 8.49 3 15.67c0 2.81.93 5.41 2.5 7.52L4 29.33l6.36-1.67c2.03 1.11 4.35 1.75 6.64 1.75 7.18 0 13-5.82 13-13S23.18 2.67 16 2.67zm0 23.33c-2.11 0-4.07-.57-5.77-1.56l-.41-.24-3.77.99 1.01-3.67-.27-.43a10.68 10.68 0 01-1.64-5.75c0-5.88 4.79-10.67 10.67-10.67 5.88 0 10.67 4.79 10.67 10.67 0 5.88-4.79 10.67-10.67 10.67z"/>
+	</svg>
+    </a>
+	</div>
+
+	<div data-aos="zoom-in-left" class="md:w-7/12">
+		<img class="md:w-11/7 mx-auto rounded-2xl shadow-xl object-cover"
+		     src="img/opiniones.jpg"
+		     alt="Opiniones de clientes de cerrajería">
+	</div>
+</div>
+
+</section>
+
+		
+	</div>
+
+	<!-- MAPA -->
+<section id="zona-cobertura" class="mt-32">
+    <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+
+        <h2 class="text-3xl font-bold text-center text-darken mb-4">
+            Zona de <span class="text-yellow-500">Cobertura</span>
+        </h2>
+
+        <p class="text-center text-gray-500 mb-10">
+            Atendemos Montevideo y zonas cercanas las 24 horas
+        </p>
+
+        <div class="w-full h-[420px] rounded-2xl overflow-hidden shadow-xl">
+            <iframe
+                src="https://www.google.com/maps?q=Montevideo%20Uruguay&output=embed"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa de zona de cobertura de cerrajería">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+	<!-- .container -->
+
+	<footer class="mt-32" style="background-color: rgba(0, 0, 0, 0.836);">
+	<div class="max-w-6xl mx-auto px-6 py-12">
+
+		<!-- Logo -->
+		<div class="flex justify-center mb-6">
+			<img
+				src="img/logo2.png"
+				alt="Logo FCT Studio"
+				class="h-20 object-contain"
+			>
+		</div>
+
+		<!-- Texto descriptivo -->
+		<p class="text-center text-gray-400 text-sm mb-8">
+			Cerrajería profesional · Atención rápida · Seguridad garantizada
+		</p>
+
+		<!-- Links legales -->
+		<div class="flex justify-center items-center text-gray-400 text-sm space-x-6 mb-6">
+			<a href="#" class="hover:text-white transition">Privacidad</a>
+			<span class="w-px h-4 bg-gray-600"></span>
+			<a href="#" class="hover:text-white transition">Términos y Condiciones</a>
+		</div>
+
+		<!-- Copyright -->
+		<p class="text-center text-gray-500 text-xs">
+			© 2026 Proyecto FCT STUDIO. Todos los derechos reservados.
+		</p>
+
+	</div>
+</footer>
+
+
+	<!-- AOS init -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    	AOS.init();
+    </script>
+</body>
+</html>
